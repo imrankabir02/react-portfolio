@@ -27,6 +27,33 @@ export const EXPERIENCES = [
   },
 ];
 
+export const EDUCATIONS = [
+  {
+    title: "B.Sc in CSE",
+    name: "Khulna University",
+    location: "Khulna-9208, Bangladesh",
+    year: "January, 2018 - March 2023"
+  },
+  {
+    title: "HSC",
+    name: "Digraj Degree College",
+    location: "Mongla, Bagerhat",
+    year: "July, 2014 - August, 2016"
+  },
+  {
+    title: "SSC",
+    name: "Sreefaltala Pilot Secondary School",
+    location: "Rampal, Bagerhat",
+    year: "Feruary 2012 - June 2014"
+  },
+  {
+    title: "JSC",
+    name: "Hurka SN High School",
+    location: "Rampal, Bagerhat",
+    year: "January, 2009 - February, 2012"
+  }
+];
+
 export const PROJECTS = [
   {
     title: "E-Commerce Website",

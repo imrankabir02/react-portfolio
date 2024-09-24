@@ -15,13 +15,13 @@ const Navbar = () => {
                     <a href="#about" className="transition-colors hover:text-indigo-400">About</a>
                     <a href="#skills" className="transition-colors hover:text-indigo-400">Skills</a>
                     <a href="#experience" className="transition-colors hover:text-indigo-400">Experience</a>
-                    {/* <a href="#projects" className="transition-colors hover:text-indigo-400">Projects</a> */}
+                    <a href="#educations" className="transition-colors hover:text-indigo-400">Educations</a>
                     <a href="#hero" className="transition-colors hover:text-indigo-400">Contact Me</a>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className="md:hidden">
-                    <button onClick={toggleMenu} className="text-2xl focus:outline-none">
+                <div className="flex justify-end md:hidden">
+                    <button onClick={toggleMenu} className="text-xl">
                         {isOpen ? '✕' : '☰'}
                     </button>
                 </div>
@@ -34,8 +34,8 @@ const Navbar = () => {
                         <li><a href="#about" className="transition-colors hover:text-indigo-400">About</a></li>
                         <li><a href="#skills" className="transition-colors hover:text-indigo-400">Skills</a></li>
                         <li><a href="#experience" className="transition-colors hover:text-indigo-400">Experience</a></li>
-                        <li><a href="#projects" className="transition-colors hover:text-indigo-400">Projects</a></li>
-                        <li><a href="#contact" className="transition-colors hover:text-indigo-400">Contact</a></li>
+                        <li><a href="#educations" className="transition-colors hover:text-indigo-400">Educations</a></li>
+                        <li><a href="#hero" className="transition-colors hover:text-indigo-400">Contact Me</a></li>
                     </ul>
                 </div>
             )}
