@@ -3,9 +3,20 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
+export const MY_DETAILS = {
+  name: "Mridha Imran Kabir",
+  title: "Backend Developer",
+  company: "Phone Tech BD Ltd",
+  email: "imrankabir325@gmail.com",
+  phoneNo: "+880 1614 126 363",
+  address: "M.A Bari St, Sonadanga, Khulna",
+};
+
+
+
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a Computer Science graduate from Khulna University with a focus on backend development and full-stack web technologies. Currently working as a Backend Developer at Phone Tech BD Ltd, I specialize in building efficient server-side applications using Laravel, PHP, and MySQL. My internship at Unicorn Software and Solutions enhanced my skills in configuring web environments and collaborating on back-end development. Proficient in C/C++, Java, JavaScript, and PHP, I have experience developing responsive web applications and personal portfolios. I'm passionate about problem-solving, regularly practicing on LeetCode and HackerRank.`;
 
 export const EXPERIENCES = [
   {
@@ -69,8 +80,4 @@ export const PROJECTS = [
   },
 ];
 
-export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
-};
+export const CONTACT = {};
