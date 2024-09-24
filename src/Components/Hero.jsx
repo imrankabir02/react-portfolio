@@ -10,9 +10,9 @@ import { FaInstagram } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <div className="pb-12 text-white border-b border-neutral-800 lg:pb-20 bg-gradient-to-r from-slate-925 to-slate-1000">
+        <div id="hero" className="pb-12 text-white border-b border-neutral-800 lg:pb-20 bg-gradient-to-r from-slate-925 to-slate-1000">
             {/* Main container */}
-            <div className="flex flex-col px-6 mx-auto lg:flex-row lg:items-center lg:justify-between max-w-7xl">
+            <div className="flex flex-col px-6 py-12 mx-auto lg:flex-row lg:items-center lg:justify-between max-w-7xl">
                 {/* Left side - Text content */}
                 <div className="flex flex-col items-center mb-8 lg:items-start lg:w-1/2 lg:mb-0">
                     <p className="text-xl font-semibold leading-tight tracking-tight text-center text-pink-400 lg:text-3xl lg:text-left lg:mt-16 animate-fadeIn">

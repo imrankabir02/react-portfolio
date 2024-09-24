@@ -1,14 +1,13 @@
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import About from "./Components/About"
-import Technologies from "./Components/Technologies"
 import Experience from './Components/Experience';
+import Skills from "./Components/Skills";
 import Projects from './Components/Projects';
-import Contact from "./Components/Contact";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-teal-600">
+    <div className="overflow-x-hidden antialiased text-neutral-300 selection:bg-cyan-300 selection:text-teal-600">
       {/* Full-screen dark background with gradient effect */}
       <div className="fixed top-0 left-0 right-0 bottom-0 bg-slate-950 z-[-1]">
         {/* Gradient overlay on top of the solid dark background */}
@@ -16,14 +15,13 @@ const App = () => {
       </div>
 
       {/* Main container for the content */}
-      <div className="relative container mx-auto px-8">
+      <div className="container relative px-8 mx-auto">
         <Navbar />
         <Hero />
         <About />
-        <Technologies />
+        <Skills />
         <Experience />
-        <Projects />
-        <Contact />
+        {/* <Projects /> */}
       </div>
     </div>
   )

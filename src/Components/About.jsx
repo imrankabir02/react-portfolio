@@ -4,7 +4,7 @@ import cvFile from "../assets/ImranCV.pdf"
 
 const About = () => {
     return (
-        <div className="pb-12 text-white border-b border-neutral-800 lg:pb-20 bg-gradient-to-r from-slate-925 to-gray-900">
+        <div id="about" className="pb-12 text-white border-b border-neutral-800 lg:pb-20 bg-gradient-to-r from-slate-925 to-gray-900">
             <h1 className="my-20 text-4xl font-bold text-center">
                 About<span className="text-indigo-400"> Me</span>
             </h1>

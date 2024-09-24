@@ -1,35 +1,44 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import React, { useState } from 'react';
 
 const Navbar = () => {
-    return (
-        <nav className="h-20 flex items-center justify-between px-6 py-4">
-            {/* Logo section */}
-            <a href="https://www.github.com/imrankabir02" className="text-3xl font-bold">
-                <img
-                    src="/path/to/logo.png"
-                    alt="Logo"
-                    className="h-10 w-auto"
-                />
-            </a>
+    const [isOpen, setIsOpen] = useState(false);
 
-            {/* Social icons section */}
-            <div className="flex items-center gap-4 text-2xl">
-                <a href="https://www.linkedin.com/in/imrankabir02" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin />
-                </a>
-                <a href="https://www.github.com/imrankabir02" target="_blank" rel="noopener noreferrer">
-                    <FaGithub />
-                </a>
-                <a href="https://www.facebook.com/imrankabir02" target="_blank" rel="noopener noreferrer">
-                    <FaFacebook />
-                </a>
-                <a href="https://www.instagram.com/imrankabir02" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram />
-                </a>
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <nav className="fixed top-0 z-50 w-full text-white shadow-lg bg-gradient-to-r from-slate-900 to-slate-1000">
+            <div className="container flex items-center justify-between h-16 px-6 mx-auto">
+                {/* Desktop Navigation Links */}
+                <div className="justify-center hidden w-full space-x-8 text-lg font-medium md:flex">
+                    <a href="#about" className="transition-colors hover:text-indigo-400">About</a>
+                    <a href="#skills" className="transition-colors hover:text-indigo-400">Skills</a>
+                    <a href="#experience" className="transition-colors hover:text-indigo-400">Experience</a>
+                    {/* <a href="#projects" className="transition-colors hover:text-indigo-400">Projects</a> */}
+                    <a href="#hero" className="transition-colors hover:text-indigo-400">Contact Me</a>
+                </div>
+
+                {/* Mobile Menu Button */}
+                <div className="md:hidden">
+                    <button onClick={toggleMenu} className="text-2xl focus:outline-none">
+                        {isOpen ? '✕' : '☰'}
+                    </button>
+                </div>
             </div>
+
+            {/* Mobile Dropdown Menu */}
+            {isOpen && (
+                <div className="absolute left-0 w-full py-4 bg-gray-800 top-16 md:hidden">
+                    <ul className="flex flex-col items-center space-y-4 text-lg">
+                        <li><a href="#about" className="transition-colors hover:text-indigo-400">About</a></li>
+                        <li><a href="#skills" className="transition-colors hover:text-indigo-400">Skills</a></li>
+                        <li><a href="#experience" className="transition-colors hover:text-indigo-400">Experience</a></li>
+                        <li><a href="#projects" className="transition-colors hover:text-indigo-400">Projects</a></li>
+                        <li><a href="#contact" className="transition-colors hover:text-indigo-400">Contact</a></li>
+                    </ul>
+                </div>
+            )}
         </nav>
     );
 }
